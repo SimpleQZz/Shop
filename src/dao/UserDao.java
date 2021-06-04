@@ -1,7 +1,8 @@
 package dao;
 
 import domain.User;
-import javafx.scene.control.TextField;
+
+import java.util.List;
 
 public interface UserDao {
     User findUser(String username,String password);
@@ -10,4 +11,8 @@ public interface UserDao {
     User findByUserName(String usernameText);
 
     void updateUser(String username, String  password);
+
+    List<User> findAll();
+
+    void save(User user);
 }

@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
+import viewModel.SourceDataViewModel;
 
 import java.io.IOException;
 
@@ -23,6 +24,12 @@ public class Login {
     public javafx.scene.control.Button confirm;
     @FXML
     private PasswordField password;
+
+    private SourceDataViewModel viewModel = SourceDataViewModel.getInstance();
+
+    public void initialize(){
+        viewModel.nameProperty().bindBidirectional(username.textProperty());
+    }
 
     /**
      * 弹框
@@ -39,7 +46,8 @@ public class Login {
         if (user != null) {
             Stage primaryStage = (Stage) confirm.getScene().getWindow();
             primaryStage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("../view/.fxml"));  //todo 用户界面
+            viewModel.setTargetData();
+            Parent root = FXMLLoader.load(getClass().getResource("../view/cartlist.fxml"));
             Stage dh = new Stage();//新建Stage
             Scene scene = new Scene(root);
             dh.setScene(scene);
@@ -60,7 +68,6 @@ public class Login {
             alert("ERROR", "The username or password is wrong, please re-enter!", null, Alert.AlertType.ERROR);
         }
 
-        // TODO: 2021/5/28 忘记密码 
     }
 
     public void forget(ActionEvent actionEvent) {
