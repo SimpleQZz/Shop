@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="930.0" prefWidth="1080.0" style="-fx-background-color: #6ac5ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Detail">
+   <children>
+      <HBox layoutY="112.0" prefHeight="183.0" prefWidth="1081.0">
+         <children>
+            <Pane prefHeight="140.0" prefWidth="269.0" style="-fx-background-color: white;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <children>
+                  <Label layoutX="41.0" layoutY="14.0" text="Intel" textFill="#1757b5">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="72.0" text="Xeon Gold 52182" textFill="#6ac5ff">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="139.0" layoutY="123.0" text="3GHz-3.9GHz" />
+               </children>
+            </Pane>
+            <Pane prefHeight="183.0" prefWidth="214.0" />
+            <TextArea prefHeight="183.0" prefWidth="548.0" promptText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis,arcu id pretium elementum, orci risus aliquet est, ac convallis est arcu anibh. Vivamus a nibh feugiat, aliquet metus at, vestibulum justo. Nullamac velit orci.lnteger at dolor eu arcu molestie malesuada.Quisquetempor libero vitae pharetra facilisis. Donec quis lorem eu risus egestasaliquam. Morbi quis justo sed elit cursus ultrices non sit amet est.Pellentesque sit amet scelerisque lacus. Ut et finibus mi. Nullam felis" scrollLeft="5.0" scrollTop="5.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <HBox layoutX="6.0" layoutY="325.0" prefHeight="250.0" prefWidth="1080.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="400.0">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+               <children>
+                  <TableView layoutX="37.0" layoutY="38.0" prefHeight="138.0" prefWidth="316.0">
+                    <columns>
+                      <TableColumn prefWidth="215.0" text="Price (credit Points / hour)" />
+                      <TableColumn prefWidth="100.0" text="Quantity" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="81.0" layoutY="10.0" text="Purchase request price">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="126.0" layoutY="197.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="137.0" text="SELL" />
+               </children>
+            </Pane>
+            <Pane prefHeight="300.0" prefWidth="531.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <children>
+                  <TableView layoutX="149.0" layoutY="33.0" prefHeight="138.0" prefWidth="340.0">
+                     <columns>
+                        <TableColumn prefWidth="215.0" text="Price (credit Points / hour)" />
+                        <TableColumn prefWidth="124.0" text="Quantity" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="207.0" layoutY="-1.0" text="Purchase request price">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="232.0" layoutY="186.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="156.0" text="BUY" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <LineChart layoutX="12.0" layoutY="570.0" prefHeight="318.0" prefWidth="1064.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="902.0" layoutY="879.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="back" />
+   </children>
+</AnchorPane>

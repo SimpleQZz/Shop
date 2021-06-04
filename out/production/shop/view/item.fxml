@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="280.0" style="-fx-background-color: #15a9e4;">
+         <children>
+            <Label layoutX="18.0" layoutY="2.0" text="Intel" textFill="#3734c9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="40.0" text="Xeon Gold 5218" textFill="#1b1b1b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="77.0" text="2.8GHz-3.6GHz">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="100.0" prefWidth="368.0">
+         <children>
+            <Label layoutX="190.0" layoutY="28.0" text="10.920">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="100.0" prefWidth="235.0">
+         <children>
+            <Label layoutX="21.0" layoutY="30.0" text="Credit Points / hour">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</HBox>

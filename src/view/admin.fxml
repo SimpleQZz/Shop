@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <top>
+      <Pane prefHeight="100.0" prefWidth="725.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="27.0" layoutY="30.0" text="Administration Mode">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="500.0" prefWidth="246.0" style="-fx-background-color: #AAB2BD;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="90.0" prefHeight="270.0" prefWidth="246.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#create" prefHeight="38.0" prefWidth="246.0" style="-fx-background-color: #AAB2BD;" text="Create organization">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#invite" prefHeight="38.0" prefWidth="246.0" style="-fx-background-color: #AAB2BD;" text="lnvite Administration">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#assets" prefHeight="38.0" prefWidth="246.0" style="-fx-background-color: #AAB2BD;" text="Assets History">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#edit" prefHeight="38.0" prefWidth="246.0" style="-fx-background-color: #AAB2BD;" text="Edit asset">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="content" layoutX="7.0" prefHeight="439.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

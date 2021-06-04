@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Cartlist">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="800.0">
+         <children>
+            <Pane prefHeight="60.0" prefWidth="479.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="14.0" prefHeight="24.0" prefWidth="319.0" text="Electronic asset trading system" textFill="#b9b6b6">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="60.0" prefWidth="524.0">
+               <children>
+                  <Label layoutX="290.0" layoutY="18.0" text="Mycount" textFill="#b9b6b6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <VBox layoutX="8.0" layoutY="60.0" prefHeight="440.0" prefWidth="800.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="439.0" prefWidth="800.0" vbarPolicy="ALWAYS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

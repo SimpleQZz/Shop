@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemainingAssets">
+   <children>
+      <HBox layoutX="3.0" layoutY="89.0" prefHeight="81.0" prefWidth="1071.0">
+         <children>
+            <Pane prefHeight="81.0" prefWidth="557.0">
+               <children>
+                  <Label layoutX="126.0" layoutY="21.0" prefHeight="20.0" prefWidth="128.0" text="company A" />
+               </children>
+            </Pane>
+            <Pane prefHeight="81.0" prefWidth="556.0">
+               <children>
+                  <Label layoutX="221.0" layoutY="31.0" prefHeight="20.0" prefWidth="150.0" text="Cancel assets" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <TableView layoutX="111.0" layoutY="190.0" prefHeight="200.0" prefWidth="839.0">
+        <columns>
+          <TableColumn prefWidth="215.0" text="Asset Name" />
+          <TableColumn minWidth="0.0" prefWidth="162.0" text="Remaining Number" />
+            <TableColumn prefWidth="140.0" text="Upload Date" />
+            <TableColumn prefWidth="146.0" text="Employee lD" />
+            <TableColumn prefWidth="175.0" text="State" />
+        </columns>
+      </TableView>
+      <Button layoutX="256.0" layoutY="448.0" mnemonicParsing="false" text="confirm" />
+      <Button layoutX="652.0" layoutY="448.0" mnemonicParsing="false" text="back" />
+      <Pane layoutX="116.0" layoutY="403.0" prefHeight="30.0" prefWidth="828.0">
+         <children>
+            <Label layoutX="167.0" prefHeight="20.0" prefWidth="600.0" text="If you need to cancel assets, please select one for operation" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="591.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CancelAssets">
+   <children>
+      <HBox layoutY="93.0" prefHeight="61.0" prefWidth="1080.0">
+         <children>
+            <Pane prefHeight="61.0" prefWidth="534.0">
+               <children>
+                  <Label layoutX="84.0" layoutY="21.0" prefHeight="20.0" prefWidth="106.0" text="compay" />
+               </children>
+            </Pane>
+            <Pane prefHeight="61.0" prefWidth="558.0">
+               <children>
+                  <Label layoutX="299.0" layoutY="21.0" />
+                  <Label layoutX="260.0" layoutY="21.0" text="Remaining assets" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox layoutY="182.0" prefHeight="100.0" prefWidth="1080.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="1080.0">
+               <children>
+                  <Label layoutX="111.0" layoutY="40.0" />
+                  <Label layoutX="98.0" layoutY="50.0" text="Credit points: " />
+                  <Label layoutX="232.0" layoutY="50.0" text="789" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <TableView layoutX="120.0" layoutY="304.0" prefHeight="200.0" prefWidth="759.0">
+        <columns>
+          <TableColumn prefWidth="215.0" text="Asset Name" />
+          <TableColumn prefWidth="285.0" text="Remaining Number" />
+            <TableColumn prefWidth="258.0" text="Upload Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="777.0" layoutY="530.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="146.0" text="back" />
+   </children>
+</AnchorPane>

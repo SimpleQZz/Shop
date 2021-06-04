@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="439.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Invite">
+    <children>
+      <ComboBox layoutX="14.0" layoutY="23.0" prefWidth="150.0" />
+      <ProgressBar layoutX="-2.0" layoutY="66.0" prefHeight="23.0" prefWidth="800.0" progress="0.0" />
+      <TextField fx:id="username" layoutX="349.0" layoutY="123.0" />
+      <TextField fx:id="password" layoutX="349.0" layoutY="190.0" />
+      <TextField fx:id="cpassword" layoutX="349.0" layoutY="260.0" />
+      <Label layoutX="200.0" layoutY="128.0" text="username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="180.0" text="password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="260.0" text="confirmpassword">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="364.0" layoutY="338.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="180.0" text="add" />
+    </children>
+</Pane>
